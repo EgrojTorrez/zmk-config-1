@@ -18,6 +18,15 @@
 &mt { quick_tap_ms=<200>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_exit {
+            timeout-ms = <200>;
+            key-positions = <34 30>;
+            bindings = <&kp LS(F4)>;
+        };
+        
+    };
         keymap {
                 compatible = "zmk,keymap";
 
